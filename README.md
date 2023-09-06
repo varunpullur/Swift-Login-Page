@@ -1,7 +1,5 @@
 # Swift-Login-Page
 
-## Description
-
 This repository contains three distinct projects, each featuring a basic login page UI. While the core functionality remains the same across all three projects.
 
 ### Project-1 : StoryboardLoginPage
