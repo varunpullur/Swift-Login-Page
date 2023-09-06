@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A51CCDD12AA7808D00AC7151 /* SwiftUILoginPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CCDD02AA7808D00AC7151 /* SwiftUILoginPageApp.swift */; };
-		A51CCDD32AA7808D00AC7151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CCDD22AA7808D00AC7151 /* ContentView.swift */; };
+		A51CCDD32AA7808D00AC7151 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */; };
 		A51CCDD52AA7809100AC7151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51CCDD42AA7809100AC7151 /* Assets.xcassets */; };
 		A51CCDD82AA7809100AC7151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51CCDD72AA7809100AC7151 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		A51CCDCD2AA7808D00AC7151 /* SwiftUILoginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILoginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51CCDD02AA7808D00AC7151 /* SwiftUILoginPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILoginPageApp.swift; sourceTree = "<group>"; };
-		A51CCDD22AA7808D00AC7151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		A51CCDD42AA7809100AC7151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51CCDD72AA7809100AC7151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				A51CCDD02AA7808D00AC7151 /* SwiftUILoginPageApp.swift */,
-				A51CCDD22AA7808D00AC7151 /* ContentView.swift */,
+				A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */,
 				A51CCDD42AA7809100AC7151 /* Assets.xcassets */,
 				A51CCDD62AA7809100AC7151 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51CCDD32AA7808D00AC7151 /* ContentView.swift in Sources */,
+				A51CCDD32AA7808D00AC7151 /* LoginPageView.swift in Sources */,
 				A51CCDD12AA7808D00AC7151 /* SwiftUILoginPageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
