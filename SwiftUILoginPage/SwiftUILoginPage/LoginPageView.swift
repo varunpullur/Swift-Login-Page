@@ -10,7 +10,6 @@ import SwiftUI
 struct LoginPageView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    @State private var message: String = ""
     
     var isiPad: Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
@@ -32,13 +31,7 @@ struct LoginPageView: View {
                 .frame(width: isiPad ? 400 : nil)
             
             Button{
-                if username == "admin" && password == "admin" {
-                    print("username: \(username) \npassword: \(password)" )
-                    message = "Login Successful"
-                } else {
-                    message = "Invalid username or password"
-                }
-                                
+                print("username: \(username) \npassword: \(password)" )
             } label: {
                 Text("Login")
                     .font(.headline)
@@ -50,10 +43,6 @@ struct LoginPageView: View {
             }
             .disabled(username.isEmpty || password.isEmpty)
             .opacity(username.isEmpty || password.isEmpty ? 0.3 : 1)
-            
-            Text(message)
-                .foregroundColor(message == "Login Successful" ? .green : .red)
-                .padding()
             
             Button{} label: {
                 Text("Forgot Password?")
