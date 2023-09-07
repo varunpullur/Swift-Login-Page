@@ -47,7 +47,7 @@ struct LoginPageView: View {
             Button{} label: {
                 Text("Forgot Password?")
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(.blue)
             }
             Spacer()
         }
