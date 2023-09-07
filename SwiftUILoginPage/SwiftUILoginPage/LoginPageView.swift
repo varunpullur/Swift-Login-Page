@@ -33,9 +33,8 @@ struct LoginPageView: View {
             
             Button{
                 if username == "admin" && password == "admin" {
+                    print("username: \(username) \npassword: \(password)" )
                     message = "Login Successful"
-                } else if username.isEmpty || password.isEmpty {
-                    message = "Please enter all the fields"
                 } else {
                     message = "Invalid username or password"
                 }
@@ -49,7 +48,9 @@ struct LoginPageView: View {
                     .background(Color.blue)
                     .cornerRadius(15.0)
             }
-               
+            .disabled(username.isEmpty || password.isEmpty)
+            .opacity(username.isEmpty || password.isEmpty ? 0.3 : 1)
+            
             Text(message)
                 .foregroundColor(message == "Login Successful" ? .green : .red)
                 .padding()
