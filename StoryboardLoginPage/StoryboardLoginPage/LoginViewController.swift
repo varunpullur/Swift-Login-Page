@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         
         usernameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
+        passwordField.isSecureTextEntry = true
     }
     
     private func setupUI() {
