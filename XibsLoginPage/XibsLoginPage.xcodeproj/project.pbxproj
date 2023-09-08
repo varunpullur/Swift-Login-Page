@@ -15,6 +15,8 @@
 		A51CCE172AA7824600AC7151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51CCE152AA7824600AC7151 /* LaunchScreen.storyboard */; };
 		A587D05E2AAB137A00314A0B /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587D05D2AAB137A00314A0B /* CustomLabelView.swift */; };
 		A587D0602AAB138C00314A0B /* CustomLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A587D05F2AAB138C00314A0B /* CustomLabelView.xib */; };
+		A587D0632AAB213600314A0B /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587D0622AAB213600314A0B /* CustomTextView.swift */; };
+		A587D0652AAB215D00314A0B /* CustomTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A587D0642AAB215D00314A0B /* CustomTextView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A51CCE182AA7824600AC7151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A587D05D2AAB137A00314A0B /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		A587D05F2AAB138C00314A0B /* CustomLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLabelView.xib; sourceTree = "<group>"; };
+		A587D0622AAB213600314A0B /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		A587D0642AAB215D00314A0B /* CustomTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				A51CCE182AA7824600AC7151 /* Info.plist */,
 				A587D05D2AAB137A00314A0B /* CustomLabelView.swift */,
 				A587D05F2AAB138C00314A0B /* CustomLabelView.xib */,
+				A587D0622AAB213600314A0B /* CustomTextView.swift */,
+				A587D0642AAB215D00314A0B /* CustomTextView.xib */,
 			);
 			path = XibsLoginPage;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				A51CCE172AA7824600AC7151 /* LaunchScreen.storyboard in Resources */,
 				A51CCE142AA7824600AC7151 /* Assets.xcassets in Resources */,
 				A587D0602AAB138C00314A0B /* CustomLabelView.xib in Resources */,
+				A587D0652AAB215D00314A0B /* CustomTextView.xib in Resources */,
 				A51CCE122AA7824200AC7151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51CCE0F2AA7824200AC7151 /* LoginViewController.swift in Sources */,
+				A587D0632AAB213600314A0B /* CustomTextView.swift in Sources */,
 				A51CCE0B2AA7824200AC7151 /* AppDelegate.swift in Sources */,
 				A587D05E2AAB137A00314A0B /* CustomLabelView.swift in Sources */,
 				A51CCE0D2AA7824200AC7151 /* SceneDelegate.swift in Sources */,
