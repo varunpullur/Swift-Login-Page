@@ -13,6 +13,8 @@
 		A51CCE122AA7824200AC7151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51CCE102AA7824200AC7151 /* Main.storyboard */; };
 		A51CCE142AA7824600AC7151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51CCE132AA7824600AC7151 /* Assets.xcassets */; };
 		A51CCE172AA7824600AC7151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51CCE152AA7824600AC7151 /* LaunchScreen.storyboard */; };
+		A587D05E2AAB137A00314A0B /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587D05D2AAB137A00314A0B /* CustomLabelView.swift */; };
+		A587D0602AAB138C00314A0B /* CustomLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A587D05F2AAB138C00314A0B /* CustomLabelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A51CCE132AA7824600AC7151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51CCE162AA7824600AC7151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51CCE182AA7824600AC7151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A587D05D2AAB137A00314A0B /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
+		A587D05F2AAB138C00314A0B /* CustomLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLabelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A51CCE132AA7824600AC7151 /* Assets.xcassets */,
 				A51CCE152AA7824600AC7151 /* LaunchScreen.storyboard */,
 				A51CCE182AA7824600AC7151 /* Info.plist */,
+				A587D05D2AAB137A00314A0B /* CustomLabelView.swift */,
+				A587D05F2AAB138C00314A0B /* CustomLabelView.xib */,
 			);
 			path = XibsLoginPage;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				A51CCE172AA7824600AC7151 /* LaunchScreen.storyboard in Resources */,
 				A51CCE142AA7824600AC7151 /* Assets.xcassets in Resources */,
+				A587D0602AAB138C00314A0B /* CustomLabelView.xib in Resources */,
 				A51CCE122AA7824200AC7151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				A51CCE0F2AA7824200AC7151 /* LoginViewController.swift in Sources */,
 				A51CCE0B2AA7824200AC7151 /* AppDelegate.swift in Sources */,
+				A587D05E2AAB137A00314A0B /* CustomLabelView.swift in Sources */,
 				A51CCE0D2AA7824200AC7151 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

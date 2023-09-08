@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomLabelView" customModule="XibsLoginPage" customModuleProvider="target">
+            <connections>
+                <outlet property="headingLabel" destination="fQc-ot-8HI" id="au9-aJ-GZH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApF-Ir-Fri">
+                    <rect key="frame" x="152.66666666666666" y="408" width="88" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQc-ot-8HI">
+                            <rect key="frame" x="0.0" y="0.0" width="88" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="Y2O-Ve-Odj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fQc-ot-8HI" secondAttribute="bottom" id="8OB-7b-d2h"/>
+                        <constraint firstAttribute="trailing" secondItem="fQc-ot-8HI" secondAttribute="trailing" id="cjy-at-ec2"/>
+                        <constraint firstItem="fQc-ot-8HI" firstAttribute="top" secondItem="ApF-Ir-Fri" secondAttribute="top" id="dag-qL-VZk"/>
+                        <constraint firstItem="fQc-ot-8HI" firstAttribute="leading" secondItem="ApF-Ir-Fri" secondAttribute="leading" id="yS4-AG-0m2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ApF-Ir-Fri" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7B0-U8-kSB"/>
+                <constraint firstItem="ApF-Ir-Fri" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rgV-JI-ds9"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

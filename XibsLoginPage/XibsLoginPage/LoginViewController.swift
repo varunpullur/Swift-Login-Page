@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var customLabelView: CustomLabelView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        customLabelView.headingLabel.text = "Sign In"
     }
-
-
 }
 
