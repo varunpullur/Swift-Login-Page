@@ -10,6 +10,7 @@ import UIKit
 class CustomTextView: UIView {
 
     @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var eyeImage: UIImageView!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

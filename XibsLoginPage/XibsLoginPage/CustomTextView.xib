@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextView" customModule="XibsLoginPage" customModuleProvider="target">
             <connections>
+                <outlet property="eyeImage" destination="kDn-R3-uZV" id="SXI-Ws-4lb"/>
                 <outlet property="inputField" destination="x99-JN-nZP" id="rd8-9i-HHL"/>
             </connections>
         </placeholder>
@@ -31,6 +32,11 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="eye.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kDn-R3-uZV">
+                            <rect key="frame" x="299" y="10" width="26" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstItem="x99-JN-nZP" firstAttribute="centerX" secondItem="C1Q-MV-QQw" secondAttribute="centerX" id="Jeg-5Y-Pz8"/>
@@ -50,6 +56,7 @@
         </view>
     </objects>
     <resources>
+        <image name="eye.fill" catalog="system" width="128" height="80"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

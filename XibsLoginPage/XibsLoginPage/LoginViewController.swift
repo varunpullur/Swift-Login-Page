@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 
         passwordTextView.inputField.isSecureTextEntry = true
         loginButtonView.button.isEnabled = false
+        usernameTextView.eyeImage.isHidden = true
         
         usernameTextView.inputField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordTextView.inputField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)

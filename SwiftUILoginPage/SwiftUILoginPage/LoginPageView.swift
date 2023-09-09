@@ -29,6 +29,14 @@ struct LoginPageView: View {
             SecureField("Password", text: $password)
                 .modifier(LoginTextFieldStyle())
                 .frame(width: isiPad ? 400 : nil)
+                .overlay((
+                    Image(systemName: "eye.fill")
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 25)
+                        .padding(.bottom, 15)
+                        .opacity(0.5)
+                ), alignment: .trailing)
+            
             
             Button{
                 print("username: \(username) \npassword: \(password)" )
