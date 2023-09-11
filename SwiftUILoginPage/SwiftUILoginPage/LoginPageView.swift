@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginPageView: View {
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var isPasswordVisible: Bool = false
     
     var isiPad: Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
@@ -26,17 +27,39 @@ struct LoginPageView: View {
                 .modifier(LoginTextFieldStyle())
                 .frame(width: isiPad ? 400 : nil)
             
-            SecureField("Password", text: $password)
-                .modifier(LoginTextFieldStyle())
-                .frame(width: isiPad ? 400 : nil)
-                .overlay((
-                    Image(systemName: "eye.fill")
-                        .foregroundColor(.gray)
-                        .padding(.trailing, 25)
-                        .padding(.bottom, 15)
-                        .opacity(0.5)
-                ), alignment: .trailing)
-            
+            if isPasswordVisible {
+                TextField("Password", text: $password)
+                    .modifier(LoginTextFieldStyle())
+                    .frame(width: isiPad ? 400 : nil)
+                    .overlay((
+                        Button{
+                            isPasswordVisible.toggle()
+                        } label: {
+                            Image(systemName : "eye.fill")
+                                .foregroundColor(.gray)
+                                .padding(.trailing, 25)
+                                .padding(.bottom, 15)
+                                .opacity(0.5)
+                                .accessibility(label: Text(isPasswordVisible ? "Hide Password" : "Show Password"))
+                        }
+                    ), alignment: .trailing)
+            } else {
+                SecureField("Password", text: $password)
+                    .modifier(LoginTextFieldStyle())
+                    .frame(width: isiPad ? 400 : nil)
+                    .overlay((
+                        Button{
+                            isPasswordVisible.toggle()
+                        } label: {
+                            Image(systemName : "eye.slash.fill")
+                                .foregroundColor(.gray)
+                                .padding(.trailing, 25)
+                                .padding(.bottom, 15)
+                                .opacity(0.5)
+                                .accessibility(label: Text(isPasswordVisible ? "Hide Password" : "Show Password"))
+                        }
+                    ), alignment: .trailing)
+            }
             
             Button{
                 print("username: \(username) \npassword: \(password)" )

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextView: CustomTextView!
     @IBOutlet weak var loginButtonView: CustomButtonView!
     @IBOutlet weak var forgotButtonView: CustomButtonView2!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         loginButtonView.buttonClick = {
             self.loginButtonClicked()
         }
+        
+        passwordTextView.setupGestureRecognizer()
         
         customLabelView.headingLabel.text = "Sign In"
         usernameTextView.inputField.placeholder = "Username"
@@ -52,5 +54,7 @@ class ViewController: UIViewController {
             loginButtonView.button.isEnabled = false
         }
     }
+    
+    
 }
 

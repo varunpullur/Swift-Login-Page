@@ -12,6 +12,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var eyeImage: UIImageView!
+    
+    var isPasswordVisible: Bool = false {
+        didSet {
+            if isPasswordVisible {
+                eyeImage.image = UIImage(systemName: "eye.fill")
+                passwordField.isSecureTextEntry = false
+            } else {
+                eyeImage.image = UIImage(systemName: "eye.slash.fill")
+                passwordField.isSecureTextEntry = true
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +34,10 @@ class ViewController: UIViewController {
         passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
         passwordField.isSecureTextEntry = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(eyeImageTapped))
+        eyeImage.isUserInteractionEnabled = true
+        eyeImage.addGestureRecognizer(tapGesture)
     }
     
     private func setupUI() {
@@ -45,5 +62,9 @@ class ViewController: UIViewController {
         } else {
             btnLogin.isEnabled = false
         }
+    }
+    
+    @objc func eyeImageTapped() {
+        isPasswordVisible.toggle()
     }
 }
