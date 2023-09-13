@@ -23,6 +23,11 @@ class CustomButtonView: UIView {
         addSubview(xibView)
         
         button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        
+        button.backgroundColor = UIColor.white
+        button.layer.cornerRadius = 5
+        button.layer.opacity = 0.7
+
     }
     
     @objc func buttonClicked() {

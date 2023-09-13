@@ -50,8 +50,10 @@ class ViewController: UIViewController {
            !username.isEmpty,
            !password.isEmpty {
             loginButtonView.button.isEnabled = true
+            loginButtonView.button.layer.opacity = 0.9
         } else {
             loginButtonView.button.isEnabled = false
+            loginButtonView.button.layer.opacity = 0.7
         }
     }
     

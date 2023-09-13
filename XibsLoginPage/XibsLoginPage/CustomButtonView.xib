@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,16 +21,19 @@
                     <rect key="frame" x="120" y="401" width="153" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kE-3d-7uu">
-                            <rect key="frame" x="0.0" y="0.0" width="153" height="50"/>
+                            <rect key="frame" x="-63.333333333333343" y="0.0" width="280" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="0V0-Ee-hsl"/>
-                                <constraint firstAttribute="width" constant="153" id="MpJ-46-9dQ"/>
+                                <constraint firstAttribute="width" constant="280" id="MpJ-46-9dQ"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="153" id="Hby-HD-jJl"/>
                         <constraint firstItem="3kE-3d-7uu" firstAttribute="centerX" secondItem="ghv-le-Zb2" secondAttribute="centerX" id="gcm-Ii-Sx1"/>
@@ -41,7 +43,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="ghv-le-Zb2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1yn-64-lV9"/>
                 <constraint firstItem="ghv-le-Zb2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="91O-BS-WeQ"/>
@@ -50,8 +52,8 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
