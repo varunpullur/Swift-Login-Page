@@ -7,12 +7,23 @@
 
 import UIKit
 
+extension UITextField {
+    func addUnderline() {
+        let underline = CALayer()
+        underline.frame = CGRect(x: 0, y: self.frame.height - 1, width: self.frame.width, height: 1)
+        underline.backgroundColor = UIColor.white.cgColor
+        self.borderStyle = .none
+        self.layer.addSublayer(underline)
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var eyeImage: UIImageView!
+    
     
     var isPasswordVisible: Bool = false {
         didSet {
@@ -27,6 +38,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setupUI()
         
@@ -38,10 +50,19 @@ class ViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(eyeImageTapped))
         eyeImage.isUserInteractionEnabled = true
         eyeImage.addGestureRecognizer(tapGesture)
+        
+        usernameField.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        passwordField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        
+        usernameField.addUnderline()
+        passwordField.addUnderline()
     }
     
     private func setupUI() {
         btnLogin.isEnabled = false
+        btnLogin.backgroundColor = UIColor.white
+        btnLogin.layer.cornerRadius = 5
+        btnLogin.layer.opacity = 0.7
     }
     
     @IBAction func loginBtnClicked(_ sender: UIButton) {
@@ -67,4 +88,5 @@ class ViewController: UIViewController {
     @objc func eyeImageTapped() {
         isPasswordVisible.toggle()
     }
+    
 }
