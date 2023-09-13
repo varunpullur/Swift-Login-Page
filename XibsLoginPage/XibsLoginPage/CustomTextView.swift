@@ -25,10 +25,10 @@ class CustomTextView: UIView {
     var isTextVisible: Bool = false {
         didSet {
             if isTextVisible {
-                eyeImage.image = UIImage(systemName: "eye.fill")
+                eyeImage.image = UIImage(systemName: "eye.slash.fill")
                 inputField.isSecureTextEntry = false
             } else {
-                eyeImage.image = UIImage(systemName: "eye.slash.fill")
+                eyeImage.image = UIImage(systemName: "eye.fill")
                 inputField.isSecureTextEntry = true
             }
         }

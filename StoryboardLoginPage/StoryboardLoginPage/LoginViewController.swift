@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     var isPasswordVisible: Bool = false {
         didSet {
             if isPasswordVisible {
-                eyeImage.image = UIImage(systemName: "eye.fill")
+                eyeImage.image = UIImage(systemName: "eye.slash.fill")
                 passwordField.isSecureTextEntry = false
             } else {
-                eyeImage.image = UIImage(systemName: "eye.slash.fill")
+                eyeImage.image = UIImage(systemName: "eye.fill")
                 passwordField.isSecureTextEntry = true
             }
         }

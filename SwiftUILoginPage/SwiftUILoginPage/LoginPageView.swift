@@ -29,17 +29,16 @@ struct LoginPageView: View {
                 .padding(.top, 10)
             
             CustomeTextView(text: $password, placeholder: "Password", isSecure: !isPasswordVisible)
-                .padding(.top, 10)
+                .padding(.top, 25)
                 .overlay(
                     Button {
                         isPasswordVisible.toggle()
                     } label: {
-                        Image(systemName: !isPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                        Image(systemName: !isPasswordVisible ? "eye.fill" : "eye.slash.fill")
                             .foregroundColor(.gray)
                             .padding(.trailing, 15)
                     }
-                    .padding(.bottom, 4)
-                    .padding(.top, 20)
+                    .padding(.top, 40)
                     ,alignment: .trailing
                 )
                 .padding(.horizontal, isiPad ? 200 : -13)

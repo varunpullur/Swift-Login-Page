@@ -39,7 +39,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zji-CK-fby" customClass="CustomTextView" customModule="XibsLoginPage" customModuleProvider="target">
-                                <rect key="frame" x="30" y="241.66666666666663" width="333" height="40"/>
+                                <rect key="frame" x="30" y="259" width="333" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="VgP-Xi-U6Z"/>
@@ -47,7 +47,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUH-bW-Epx" customClass="CustomButtonView" customModule="XibsLoginPage" customModuleProvider="target">
-                                <rect key="frame" x="56.666666666666657" y="326.66666666666669" width="280" height="50"/>
+                                <rect key="frame" x="56.666666666666657" y="344" width="280" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Nim-bY-avF"/>
@@ -55,7 +55,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvt-fd-A8b" customClass="CustomButtonView2" customModule="XibsLoginPage" customModuleProvider="target">
-                                <rect key="frame" x="110" y="411.66666666666669" width="173" height="50"/>
+                                <rect key="frame" x="110" y="429" width="173" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="XCc-yt-aFx"/>
@@ -73,7 +73,7 @@
                             <constraint firstItem="cvt-fd-A8b" firstAttribute="centerX" secondItem="GUH-bW-Epx" secondAttribute="centerX" id="Yf8-0L-67a"/>
                             <constraint firstItem="GUH-bW-Epx" firstAttribute="centerX" secondItem="zji-CK-fby" secondAttribute="centerX" id="ZLo-Ag-bi6"/>
                             <constraint firstItem="zji-CK-fby" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="buF-QJ-crx"/>
-                            <constraint firstItem="zji-CK-fby" firstAttribute="top" secondItem="Lb2-6Z-kW6" secondAttribute="bottom" constant="22.670000000000002" id="elu-BC-xHR"/>
+                            <constraint firstItem="zji-CK-fby" firstAttribute="top" secondItem="Lb2-6Z-kW6" secondAttribute="bottom" constant="40" id="elu-BC-xHR"/>
                             <constraint firstItem="Lb2-6Z-kW6" firstAttribute="centerX" secondItem="8rP-4Y-7U3" secondAttribute="centerX" id="jbr-OR-fba"/>
                             <constraint firstItem="Lb2-6Z-kW6" firstAttribute="top" secondItem="8rP-4Y-7U3" secondAttribute="bottom" constant="44" id="mnI-KW-kHE"/>
                             <constraint firstItem="Lb2-6Z-kW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6B-pT-2op"/>
