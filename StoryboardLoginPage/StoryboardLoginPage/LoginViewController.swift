@@ -80,6 +80,7 @@ class ViewController: UIViewController {
            !username.isEmpty,
            !password.isEmpty {
             btnLogin.isEnabled = true
+            btnLogin.layer.opacity = 0.9
         } else {
             btnLogin.isEnabled = false
         }
