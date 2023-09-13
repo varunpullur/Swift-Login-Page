@@ -12,6 +12,12 @@ struct SwiftUILoginPageApp: App {
     var body: some Scene {
         WindowGroup {
             LoginPageView()
+                .background(
+                Image("background_image_page-0001")
+                    .scaledToFit()
+                    .edgesIgnoringSafeArea(.all)
+                )
+
         }
     }
 }

@@ -11,6 +11,7 @@
 		A51CCDD32AA7808D00AC7151 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */; };
 		A51CCDD52AA7809100AC7151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51CCDD42AA7809100AC7151 /* Assets.xcassets */; };
 		A51CCDD82AA7809100AC7151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51CCDD72AA7809100AC7151 /* Preview Assets.xcassets */; };
+		A5F5EB762AB1866D00530797 /* CustomeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F5EB752AB1866D00530797 /* CustomeTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		A51CCDD42AA7809100AC7151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51CCDD72AA7809100AC7151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5F5EB752AB1866D00530797 /* CustomeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A51CCDD02AA7808D00AC7151 /* SwiftUILoginPageApp.swift */,
+				A5F5EB752AB1866D00530797 /* CustomeTextView.swift */,
 				A51CCDD22AA7808D00AC7151 /* LoginPageView.swift */,
 				A51CCDD42AA7809100AC7151 /* Assets.xcassets */,
 				A51CCDD62AA7809100AC7151 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F5EB762AB1866D00530797 /* CustomeTextView.swift in Sources */,
 				A51CCDD32AA7808D00AC7151 /* LoginPageView.swift in Sources */,
 				A51CCDD12AA7808D00AC7151 /* SwiftUILoginPageApp.swift in Sources */,
 			);
@@ -275,7 +279,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +312,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

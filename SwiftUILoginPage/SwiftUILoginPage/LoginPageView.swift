@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct LoginPageView: View {
     @State private var username: String = ""
     @State private var password: String = ""
@@ -19,67 +20,51 @@ struct LoginPageView: View {
     var body: some View {
         VStack {
             Text("Sign Up")
-                .font(.largeTitle)
+                .font(.system(size: 30))
+                .foregroundColor(.white)
                 .padding(.top, 40)
-                .padding(.bottom, 80)
             
-            TextField("Username", text: $username)
-                .modifier(LoginTextFieldStyle())
-                .frame(width: isiPad ? 400 : nil)
+            CustomeTextView(text: $username, placeholder: "Username")
+                .padding(.horizontal, isiPad ? 200 : -13)
+                .padding(.top, 10)
             
-            if isPasswordVisible {
-                TextField("Password", text: $password)
-                    .modifier(LoginTextFieldStyle())
-                    .frame(width: isiPad ? 400 : nil)
-                    .overlay((
-                        Button{
-                            isPasswordVisible.toggle()
-                        } label: {
-                            Image(systemName : "eye.fill")
-                                .foregroundColor(.gray)
-                                .padding(.trailing, 25)
-                                .padding(.bottom, 15)
-                                .opacity(0.5)
-                                .accessibility(label: Text(isPasswordVisible ? "Hide Password" : "Show Password"))
-                        }
-                    ), alignment: .trailing)
-            } else {
-                SecureField("Password", text: $password)
-                    .modifier(LoginTextFieldStyle())
-                    .frame(width: isiPad ? 400 : nil)
-                    .overlay((
-                        Button{
-                            isPasswordVisible.toggle()
-                        } label: {
-                            Image(systemName : "eye.slash.fill")
-                                .foregroundColor(.gray)
-                                .padding(.trailing, 25)
-                                .padding(.bottom, 15)
-                                .opacity(0.5)
-                                .accessibility(label: Text(isPasswordVisible ? "Hide Password" : "Show Password"))
-                        }
-                    ), alignment: .trailing)
-            }
+            CustomeTextView(text: $password, placeholder: "Password", isSecure: !isPasswordVisible)
+                .padding(.top, 10)
+                .overlay(
+                    Button {
+                        isPasswordVisible.toggle()
+                    } label: {
+                        Image(systemName: !isPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                            .foregroundColor(.gray)
+                            .padding(.trailing, 15)
+                    }
+                    .padding(.bottom, 4)
+                    .padding(.top, 20)
+                    ,alignment: .trailing
+                )
+                .padding(.horizontal, isiPad ? 200 : -13)
             
             Button{
                 print("username: \(username) \npassword: \(password)" )
             } label: {
                 Text("Login")
                     .font(.headline)
-                    .foregroundColor(.white)
+                    .foregroundColor(.pink)
                     .padding()
-                    .frame(width: 220, height: 60)
-                    .background(Color.blue)
-                    .cornerRadius(15.0)
+                    .frame(width: 280, height: 50)
+                    .background(Color.white)
+                    .cornerRadius(7.0)
             }
+            .padding(.top, 45)
             .disabled(username.isEmpty || password.isEmpty)
-            .opacity(username.isEmpty || password.isEmpty ? 0.3 : 1)
+            .opacity(username.isEmpty || password.isEmpty ? 0.6 : 0.9)
             
             Button{} label: {
                 Text("Forgot Password?")
                     .font(.subheadline)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.white)
             }
+            .padding(.top, 30)
             Spacer()
         }
         .padding()
@@ -89,17 +74,5 @@ struct LoginPageView: View {
 struct LoginPageView_Previews: PreviewProvider {
     static var previews: some View {
         LoginPageView()
-    }
-}
-
-struct LoginTextFieldStyle: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .autocapitalization(.none)
-            .padding()
-            .background(Color(.systemGray6))
-            .cornerRadius(5.0)
-            .padding(.bottom, 20)
-            .padding(.horizontal, 20)
     }
 }
