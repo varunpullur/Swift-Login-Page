@@ -9,9 +9,9 @@ import SwiftUI
 
 
 struct LoginPageView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @StateObject var viewModel = LoginPageViewModel()
     @State private var isPasswordVisible: Bool = false
+    @State private var isLoggedIn: Bool = false
     
     var isiPad: Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
@@ -24,11 +24,11 @@ struct LoginPageView: View {
                 .foregroundColor(.white)
                 .padding(.top, 40)
             
-            CustomeTextView(text: $username, placeholder: "Username")
+            CustomeTextView(text: $viewModel.username, placeholder: "Username")
                 .padding(.horizontal, isiPad ? 200 : -13)
                 .padding(.top, 10)
             
-            CustomeTextView(text: $password, placeholder: "Password", isSecure: !isPasswordVisible)
+            CustomeTextView(text: $viewModel.password, placeholder: "Password", isSecure: !isPasswordVisible)
                 .padding(.top, 25)
                 .overlay(
                     Button {
@@ -44,7 +44,16 @@ struct LoginPageView: View {
                 .padding(.horizontal, isiPad ? 200 : -13)
             
             Button{
-                print("username: \(username) \npassword: \(password)" )
+                let credentials = "\(viewModel.username):\(viewModel.password)"
+                let base64credentials = credentials.data(using: .utf8)?.base64EncodedString()
+                viewModel.validateUser(base64string: base64credentials ?? "") { success in
+                    if success {
+                        isLoggedIn = true
+                    } else {
+                        isLoggedIn = false
+                    }
+                }
+                
             } label: {
                 Text("Login")
                     .font(.headline)
@@ -55,8 +64,8 @@ struct LoginPageView: View {
                     .cornerRadius(7.0)
             }
             .padding(.top, 45)
-            .disabled(username.isEmpty || password.isEmpty)
-            .opacity(username.isEmpty || password.isEmpty ? 0.6 : 0.9)
+            .disabled(viewModel.username.isEmpty || viewModel.password.isEmpty)
+            .opacity(viewModel.username.isEmpty || viewModel.password.isEmpty ? 0.6 : 0.9)
             
             Button{} label: {
                 Text("Forgot Password?")
@@ -67,6 +76,14 @@ struct LoginPageView: View {
             Spacer()
         }
         .padding()
+        .fullScreenCover(isPresented: $isLoggedIn, content: {
+            WelcomeView()
+                .background(
+                    Image("background_image_page-0001")
+                    .scaledToFit()
+                    .edgesIgnoringSafeArea(.all)
+                )
+        })
     }
 }
 
