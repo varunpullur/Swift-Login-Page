@@ -15,7 +15,10 @@ This repository contains three distinct projects, each featuring a basic login p
 
 **Description:** This project uses SwiftUI to create a basic login page UI.
 
-**Overview:** Used SwiftUI to hard code all the UI elements and some basic functionality.
+**Overview:**
+
+- Used SwiftUI to hard code all the UI elements and some basic functionality.
+- Used Alamofire package and performed a basic HTTP request to verify the user
 
 ### Project-3 : XibsLoginPage
 
