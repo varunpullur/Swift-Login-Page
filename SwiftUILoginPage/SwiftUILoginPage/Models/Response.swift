@@ -8,6 +8,14 @@
 import Foundation
 
 struct Response: Decodable {
-    let token: String?
-    let expiresOn: String?
+    let token: String
+    let expiresOn: String
+    
+    func getToken() -> String {
+        return token
+    }
+
+    func getExpiresOn() -> String {
+        return expiresOn
+    }
 }

@@ -1,0 +1,6 @@
+module Pods_SwiftUILoginPageTests {
+  umbrella header "Pods-SwiftUILoginPageTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

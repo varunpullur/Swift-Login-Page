@@ -11,6 +11,7 @@ import Alamofire
 class LoginPageViewModel: ObservableObject {
     @Published var username = ""
     @Published var password = ""
+    @Published var tokenResponse: Response?
     
     func validateUser(base64string: String, completion: @escaping (Bool) -> Void){
         let base64encoded = base64string
@@ -21,13 +22,13 @@ class LoginPageViewModel: ObservableObject {
         
         AF.request("https://identity-stage.spireon.com/identity/token",headers: headers )
             .responseDecodable(of: Response.self) { response in
-                if let data = response.data,
-                   let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                    completion(decodedResponse.expiresOn != nil && decodedResponse.token != nil)
-                    print("Success")
+                if let tokenResponse = response.value {
+                    self.tokenResponse = tokenResponse
+                    completion(!tokenResponse.token.isEmpty && !tokenResponse.expiresOn.isEmpty)
+                    print("success")
                 } else {
                     completion(false)
-                    print("Failure")
+                    print("failure")
                 }
             }
     }
