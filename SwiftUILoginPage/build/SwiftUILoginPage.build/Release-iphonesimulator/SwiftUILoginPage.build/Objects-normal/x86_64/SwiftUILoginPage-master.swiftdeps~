@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "af998d7054910ab7407703b00f3d971c36f703351e07420264c1e55c9e86cec9"
+build_start_time: [1695112259, 590134000]
+build_end_time: [1695112259, 760394000]
+inputs:
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/Models/Response.swift": !dirty [1695109425, 220944270]
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/SwiftUILoginPageApp.swift": !dirty [1694586991, 367266461]
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/ViewModels/LoginPageViewModel.swift": !dirty [1695110027, 800581866]
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/Views/CustomeTextView.swift": !dirty [1694590056, 397959111]
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/Views/LoginPageView.swift": !dirty [1695108894, 584294135]
+  "/Users/pullurvarun/Desktop/Demo Apps/Swift-Login-Page/SwiftUILoginPage/SwiftUILoginPage/Views/WelcomeView.swift": !dirty [1694663452, 391677678]

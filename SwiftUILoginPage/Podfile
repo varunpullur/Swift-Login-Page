@@ -13,4 +13,3 @@ target 'SwiftUILoginPageTests' do
   inherit! :search_paths
   pod 'Alamofire'
 end
-

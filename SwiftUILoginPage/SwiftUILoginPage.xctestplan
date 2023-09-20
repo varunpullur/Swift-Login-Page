@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "7E655895-D14D-4A4F-ABA5-A4AF3765C782",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SwiftUILoginPage.xcodeproj",
+      "identifier" : "A51CCDCC2AA7808C00AC7151",
+      "name" : "SwiftUILoginPage"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SwiftUILoginPage.xcodeproj",
+        "identifier" : "A5572A342AB988670031603F",
+        "name" : "SwiftUILoginPageTests"
+      }
+    }
+  ],
+  "version" : 1
+}
