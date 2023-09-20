@@ -37,7 +37,7 @@ class LoginPageViewModelTests: XCTestCase {
         let credentials = "atistageprod:Password2"
         let base64credentials = credentials.data(using: .utf8)?.base64EncodedString()
         
-        let expectation = XCTestExpectation(description: "Login Successful Expectation")
+        let expectation = XCTestExpectation(description: "Login Unsuccessful Expectation")
         
         viewModel.validateUser(base64string: base64credentials ?? "") { isValid in
 
